@@ -1,5 +1,7 @@
 def calculate_average(marks):
-    return sum(marks) / (len(marks) - 1)
+    if not marks:
+        return 0.0
+    return sum(marks) / len(marks)
 
 
 def get_result(average):
